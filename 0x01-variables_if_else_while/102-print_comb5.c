@@ -9,24 +9,30 @@
  */
 int main(void)
 {
-	int i, j;
+	int i, j, k;
 
-	for (i = 0; i <= 99; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = 1; j <= 99; j++)
+		for (j = i; j < 100; j++)
 		{
-			int tens_i = i / 10;
-			int ones_i = i % 10;
-			int tens_j = j / 10;
-			int ones_j = j % 10;
-
-			putchar((char)(tens_i + '0'));
-			putchar((char)(ones_i + '0'));
+			if (i == j)
+			{
+				continue;
+			}
+			if (j * 100 + i < i * 100 + j)
+			{
+				continue;
+			}
+			k = i / 10;
+			putchar(k + '0');
+			k = i % 10;
+			putchar(k + '0');
 			putchar(' ');
-			putchar((char)(tens_j + '0'));
-			putchar((char)(ones_j + '0'));
-
-			if (i != 99 || j != 99)
+			k = j / 10;
+			putchar(k + '0');
+			k = j % 10;
+			putchar(k + '0');
+			if (i != 99 || j != 98)
 			{
 				putchar(',');
 				putchar(' ');
