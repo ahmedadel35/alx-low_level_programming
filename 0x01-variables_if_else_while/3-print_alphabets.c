@@ -17,11 +17,9 @@ int main(void)
 		putchar(chr);
 	}
 
-	putchar('\n');
-
 	for (chr = 'A'; chr <= 'Z'; chr++)
 	{
-		putchar(chr);
+        putchar(chr);
 	}
 
 	putchar('\n');
