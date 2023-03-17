@@ -1,6 +1,15 @@
-#include <stdio.h>  
+#include <stdio.h>
 
-int main() {  
-    printf("with proper grammar, but the outcome is a piece of art,");  
-    return 0;  
+/**
+ * main - Entry point
+ *
+ * Description: 'the program's description'
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	printf("with proper grammar, but the outcome is a piece of art,");
+
+	return (0);
 }
