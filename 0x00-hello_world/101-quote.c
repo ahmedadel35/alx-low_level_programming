@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -13,11 +14,9 @@ int main(void)
 	int i = 0;
 
 	for (i = 0; i < strlen(str); i++)
-	{
-		putchar(str[i])
-	}
+		putchar(str[i]);
 
-	putchar("\n");
+	putchar('\n');
 
 	return (1);
 }
