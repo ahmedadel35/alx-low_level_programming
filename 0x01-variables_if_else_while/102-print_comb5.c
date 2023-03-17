@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 0; i <= 99; i++)
 	{
-		for (j = i; j <= 99; j++)
+		for (j = 1; j <= 99; j++)
 		{
 			int tens_i = i / 10;
 			int ones_i = i % 10;
