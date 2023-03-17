@@ -1,6 +1,5 @@
 #include <stdio.h>
-int main()
-{
+int main(void) {
     char charType;
     int intType;
     long longIntType;
