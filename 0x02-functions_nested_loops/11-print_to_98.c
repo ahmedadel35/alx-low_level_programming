@@ -5,13 +5,13 @@
  * print_to_98 - Prints all natural numbers from n to 98.
  * @n: The starting number.
  *
- * Description: This function takes an integer `n` as 
+ * Description: This function takes an integer `n` as
  * its argument and prints
  * all natural numbers from `n` to 98, separated by commas
  *  and followed by a new
- * line. The function first checks whether `n` is less 
+ * line. The function first checks whether `n` is less
  * than or equal to 98, and
- * then uses a for loop to print the numbers from `n` 
+ * then uses a for loop to print the numbers from `n`
  *  98 in ascending or
  * descending order, depending on whether `n` is less than
  *  or greater than 98.
