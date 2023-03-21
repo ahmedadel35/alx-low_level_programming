@@ -2,11 +2,21 @@
 #include "main.h"
 
 /**
- * add - Add two integers and return the result.
- * @a: The first integer to be added.
- * @b: The second integer to be added.
+ * print_to_98 - Prints all natural numbers from n to 98.
+ * @n: The starting number.
  *
- * Return: The sum of the two integers.
+ * Description: This function takes an integer `n` as 
+ * its argument and prints
+ * all natural numbers from `n` to 98, separated by commas
+ *  and followed by a new
+ * line. The function first checks whether `n` is less 
+ * than or equal to 98, and
+ * then uses a for loop to print the numbers from `n` 
+ *  98 in ascending or
+ * descending order, depending on whether `n` is less than
+ *  or greater than 98.
+ *
+ * Return: void.
  */
 void print_to_98(int n)
 {
