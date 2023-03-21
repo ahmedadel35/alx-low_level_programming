@@ -20,4 +20,13 @@ int _putchar(char c);
 void print_alphabet(void);
 
 
+/**
+ * print_alphabet_x10 - Entry point
+ *
+ * Definition: 'the program's description'
+ *
+ * Return: Always 0 (Success)
+ */
+void print_alphabet_x10(void);
+
 #endif /* MAIN_H */
