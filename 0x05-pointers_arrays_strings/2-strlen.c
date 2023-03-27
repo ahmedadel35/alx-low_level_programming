@@ -9,5 +9,5 @@
  */
 int _strlen(char *s)
 {
-	return (sizeof(*s));
+	return sizeof *s;
 }
