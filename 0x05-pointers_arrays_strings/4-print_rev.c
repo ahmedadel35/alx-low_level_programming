@@ -9,11 +9,11 @@
  */
 void print_rev(char *s)
 {
-    while (*s != '\0')
-    {
-        putchar(*s);
-        s++;
-    }
+	while (*s != '\0')
+	{
+		printf("%s", *s);
+		s++;
+	}
 
-    putchar('\n');
+	putchar('\n');
 }
