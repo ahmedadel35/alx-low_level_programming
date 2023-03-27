@@ -6,6 +6,7 @@
  * Description: 'the program's description'
  *
  * @s: the
+ * Return: 1 if c is lowercase, 0 otherwise
  */
 int _strlen(char *s)
 {
