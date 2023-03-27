@@ -5,7 +5,7 @@
  *
  * Description: 'the program's description'
  *
- * @s: the
+ * @str: the
  */
 void _puts(char *str)
 {
