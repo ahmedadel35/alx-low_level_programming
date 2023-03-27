@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * print_rev - check the code
@@ -9,11 +10,13 @@
  */
 void print_rev(char *s)
 {
-	while (*s != '\0')
+	int i;
+	int len = strlen(s);
+
+	for (i = len - 1; i >= 0; i--)
 	{
-		printf("%s", *s);
-		s++;
+		printf("%c", s[i]);
 	}
 
-	putchar('\n');
+	printf("\n");
 }
