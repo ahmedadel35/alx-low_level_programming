@@ -1,13 +1,19 @@
 #include <stdio.h>
 
 /**
- * _puts - check the code
+ * print_rev - check the code
  *
  * Description: 'the program's description'
  *
- * @str: the
+ * @s: the
  */
-void _puts(char *str)
+void print_rev(char *s)
 {
-	printf("%s\n", str);
+    while (*s != '\0')
+    {
+        putchar(*s);
+        s++;
+    }
+
+    putchar("\n");
 }
