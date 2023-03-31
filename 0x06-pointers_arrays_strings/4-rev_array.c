@@ -7,7 +7,6 @@
  *
  * @a: asd
  * @n: sd
- * Returns a pointer to the start of dest.
  */
 void reverse_array(int *a, int n)
 {

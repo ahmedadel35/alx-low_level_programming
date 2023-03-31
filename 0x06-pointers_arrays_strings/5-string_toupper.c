@@ -7,7 +7,6 @@
  * Adds a null terminator to the end of dest.
  *
  * @str: asd
- * Returns a pointer to the start of dest.
  */
 char *string_toupper(char *str)
 {
