@@ -8,7 +8,7 @@
  * @av: The arguments.
  *
  * Return: Pointer to the new string, or NULL on failure.
- *         Each argument is followed by a newline character in the new string.
+ *         Each argument is followed by a newline.
  */
 char *argstostr(int ac, char **av)
 {
@@ -25,7 +25,7 @@ char *argstostr(int ac, char **av)
 		len += strlen(av[i]) + 1;
 	}
 
-	str = malloc(len * sizeof(char));
+	str = malloc((len + 1) * sizeof(char));
 
 	if (str == NULL)
 	{
@@ -38,7 +38,6 @@ char *argstostr(int ac, char **av)
 		{
 			str[k++] = av[i][j];
 		}
-
 		str[k++] = '\n';
 	}
 	str[k] = '\0';
