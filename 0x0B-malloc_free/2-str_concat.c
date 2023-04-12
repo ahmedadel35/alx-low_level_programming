@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (concat_str == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	strcpy(concat_str, s1);
