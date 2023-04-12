@@ -59,7 +59,7 @@ char **strtow(char *str)
 	char **words = NULL;
 	int i, j, len, nwords;
 
-	if (str == NULL || *str == '\0')
+	if (str == NULL || *str == '\0' || *str == ' ')
 	{
 		return (NULL);
 	}
