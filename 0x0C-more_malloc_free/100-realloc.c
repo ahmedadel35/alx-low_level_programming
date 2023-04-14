@@ -45,10 +45,11 @@ void *_realloc_new_ptr(void *ptr, unsigned int new_size)
  * @old_size: The size of the allocated space for ptr
  * @new_size: The new size of the memory block
  **/
-void _realloc_copy_contents(void *new_ptr,
-							void *ptr,
-							unsigned int old_size,
-							unsigned int new_size)
+void _realloc_copy_contents(
+	void *new_ptr,
+	void *ptr,
+	unsigned int old_size,
+	unsigned int new_size)
 {
 	unsigned int copy_size;
 
