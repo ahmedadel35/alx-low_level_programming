@@ -5,7 +5,7 @@
  * _realloc_null_ptr - Allocates memory when ptr is NULL
  * @new_size: The new size of the memory block
  *
- * Return: A pointer to the newly allocated memory block, or NULL if it fails
+ * Return: A pointer to the newly allocated memory block
  **/
 void *_realloc_null_ptr(unsigned int new_size)
 {
@@ -24,7 +24,7 @@ void *_realloc_null_ptr(unsigned int new_size)
  * @ptr: A pointer to the memory previously allocated with malloc
  * @new_size: The new size of the memory block
  *
- * Return: A pointer to the newly allocated memory block, or NULL if it fails
+ * Return: A pointer to the newly allocated memory block
  **/
 void *_realloc_new_ptr(void *ptr, unsigned int new_size)
 {
@@ -39,13 +39,16 @@ void *_realloc_new_ptr(void *ptr, unsigned int new_size)
 }
 
 /**
- * _realloc_copy_contents - Copies the contents of the old memory block to the new memory block
+ * _realloc_copy_contents - Copies the contents of
  * @new_ptr: A pointer to the newly allocated memory block
- * @ptr: A pointer to the memory previously allocated with malloc
+ * @ptr: A pointer to the memory previously allocated
  * @old_size: The size of the allocated space for ptr
  * @new_size: The new size of the memory block
  **/
-void _realloc_copy_contents(void *new_ptr, void *ptr, unsigned int old_size, unsigned int new_size)
+void _realloc_copy_contents(void *new_ptr,
+							void *ptr,
+							unsigned int old_size,
+							unsigned int new_size)
 {
 	unsigned int copy_size;
 
