@@ -2,13 +2,14 @@
 #define DOG_H
 
 /**
- * struct dog - a struct representing a dog
+ * struct dog - a dog's basic info
+ * @name: First member
+ * @age: Second member
+ * @owner: Third member
  *
- * @name: the name of the dog (string)
- * @age: the age of the dog (float)
- * @owner: the name of the dog's owner (string)
+ * Description: Longer description
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
@@ -27,4 +28,4 @@ void free_dog(dog_t *d);
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
 
-#endif /* DOG_H */
+#endif
